@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body{
+      font-family: Montserrat, Arial, Helvetica, sans-serif;
+    }
+    a {
+      color: tomato;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:visited {
+      color: darkred;
+    }
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+    a:active {
+      color: aquamarine;
+    }
+    .especial::before{
+      content: '⇒ ';
+      text-decoration: none;
+      color: darkgray;
+      font-weight: normal;
+    }
+    .especial::after {
+      content: ' :)';
+      text-decoration: none;
+      color: darkgray;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="noopener noreferrer">Repositório Github</a></li>
+    <li><a href="https://youtube.com/cursoemvideo" target="_blank" rel="noopener noreferrer" class ="especial">Canal do YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer">Site do Curso em Vídeo</a></li>
+  </ul>
+</body>
+</html>
