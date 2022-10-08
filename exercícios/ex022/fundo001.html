@@ -7,13 +7,26 @@
     <title>Teste de Imagem e Fundo</title>
     <style>
         div.quadrado {
+            display: inline-block;
             border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+        }
+        div#q1{
+            background-color: skyblue;
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+        div#q3{
+            background-image: url('imagens/pattern001.png');
         }
     </style>
 </head>
 <body>
-    <div class="quadrado"></div>
-    <div class="quadrado"></div>
-    <div class="quadrado"></div>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
 </body>
 </html>
