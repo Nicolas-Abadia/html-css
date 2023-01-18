@@ -19,6 +19,11 @@
         thead, tfoot {
             background-color: yellow;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         td.number{
             text-align: right;
         }
@@ -30,6 +35,7 @@
     <!--
         Anatomia de Tabelas Grandes
         <table>
+            <caption></caption>
             <thead>
                 <tr></tr>
                 <td></td>
@@ -49,8 +55,8 @@
     -->
     <table>
             <thead>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </thead>
             <tbody>
                 <tr>
@@ -64,10 +70,11 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>População Total</th>
+                    <th scope="row">População Total</th>
                     <td class="number">856.985.658</td>
                 </tr>
             </tfoot>
+            <caption>População das Unidades Federativas</caption>
         </table>
 </body>
 </html>
