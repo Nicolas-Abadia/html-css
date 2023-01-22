@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        thead, tfoot {
+            background-color: yellow;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td.number{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>População por Estado</h1>
+    <!--
+        Anatomia de Tabelas Grandes
+        <table>
+            <caption></caption>
+            <thead>
+                <tr></tr>
+                <td></td>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <td></td>
+                <th></th>
+            </tbody>
+            <tfoot>
+                <tr></tr>
+                <td></td>
+                <th></th>
+            </tfoot>
+        </table>
+    -->
+    <table>
+            <thead>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="number">48.586.125</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="number">5.898.025</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">População Total</th>
+                    <td class="number">856.985.658</td>
+                </tr>
+            </tfoot>
+            <caption>População das Unidades Federativas</caption>
+        </table>
+</body>
+</html>
